@@ -14,25 +14,26 @@
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      background-color: #2E2E2E;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      color: #F0F0F0;
     }
 
-    .signup-box {
-      background-color: white;
+    .register-box {
+      background-color: #3A3A3A;
       padding: 40px 30px;
       border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-      width: 350px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      width: 400px;
     }
 
-    .signup-box h2 {
+    .register-box h2 {
       text-align: center;
       margin-bottom: 30px;
-      color: #4e54c8;
+      color: #50C878;
     }
 
     .input-group {
@@ -42,61 +43,68 @@
     .input-group label {
       display: block;
       margin-bottom: 5px;
-      color: #333;
+      color: #CCCCCC;
     }
 
     .input-group input {
       width: 100%;
       padding: 10px;
-      border: 1px solid #ddd;
+      border: 1px solid #666;
       border-radius: 10px;
       font-size: 15px;
+      background-color: #2E2E2E;
+      color: #F0F0F0;
     }
 
     .input-group input:focus {
       outline: none;
-      border-color: #4e54c8;
-      box-shadow: 0 0 5px #4e54c8aa;
+      border-color: #50C878;
+      box-shadow: 0 0 5px #50C878aa;
     }
 
-    .signup-button {
+    .register-button {
       width: 100%;
       padding: 12px;
-      background-color: #4e54c8;
-      color: white;
+      background-color: #50C878;
+      color: #1E1E1E;
       border: none;
       border-radius: 10px;
       font-size: 16px;
+      font-weight: bold;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
 
-    .signup-button:hover {
-      background-color: #3b40a4;
+    .register-button:hover {
+      background-color: #3faa65;
     }
   </style>
 </head>
 <body>
-  <div class="signup-box">
+  <div class="register-box">
     <h2>ثبت‌نام</h2>
     <form action="#" method="POST">
       <div class="input-group">
-        <label for="username">نام کاربری</label>
-        <input type="text" id="username" name="username" required />
+        <label for="name">نام کامل</label>
+        <input type="text" id="name" name="name" required />
       </div>
       <div class="input-group">
         <label for="email">ایمیل</label>
         <input type="email" id="email" name="email" required />
       </div>
       <div class="input-group">
+        <label for="username">نام کاربری</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div class="input-group">
         <label for="password">رمز عبور</label>
         <input type="password" id="password" name="password" required />
       </div>
       <div class="input-group">
-        <label for="confirm">تکرار رمز عبور</label>
-        <input type="password" id="confirm" name="confirm" required />
+        <label for="confirm-password">تأیید رمز عبور</label>
+        <input type="password" id="confirm-password" name="confirm-password" required />
       </div>
-      <button type="submit" class="signup-button">ثبت‌نام</button>
+      <button type="submit" class="register-button">ثبت‌نام</button>
     </form>
   </div>
 </body>
