@@ -1,29 +1,128 @@
 <!DOCTYPE html>
 <html lang="fa">
-    <head>
-        <title>ontimechy</title>
-        <link rel="icon" href="images/icons/icon3.png" type="image/x-icon">
-        <meta charset="utf-8"/>
-    </head>
-    <body dir="rtl">
-        <a href="login.html" target="_blank">ورود</a>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-        <a href="register.html" target="_blank">ثبت نام</a><br/>
-        <img src="images/watchs/1.png" alt="ساعت" width="1500" height="400" title="سر بنر" />
-        <h1>ontimechy</h1>
-        <hr/>
-        <p> 
-        این نسخه اولیه سایت آنتایمچی است که در تاریخ 1404/04/09 راه اندازی شده است. <br/>
-        <br/>
-         
-        <br/>
-        آنتایمچی قصد دارد تا با توجه به نظرات شما خود را بهبود دهد، و برای این منظور مشتاقیم تا نظرات، انتقادات و پیشنهادات خودرا باما در میان بگذارید. <br/> -مدیریت آن
-        </p><br/>
-        <a href="contact.html" target="_blank">ارتباط با ما</a><br/>
-        <a href="product.html" target="_blank">مشاهده محصول</a><br/>
+<head>
+  <title>ontimechy</title>
+  <link rel="icon" href="images/icons/icon3.png" type="image/x-icon">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      direction: rtl;
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
 
+    a {
+      text-decoration: none;
+      color: #444;
+      margin-left: 10px;
+      font-weight: bold;
+    }
 
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-top: 20px;
+    }
 
-    </body>
+    .product-section {
+      margin-top: 40px;
+    }
 
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .product-name {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .product-price {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #4e54c8;
+      font-weight: bold;
+    }
+
+    hr {
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="login.html" target="_blank">ورود</a>
+  <a href="register.html" target="_blank">ثبت نام</a><br/>
+  
+  <img src="images/watchs/1.png" alt="ساعت" width="100%" height="400" title="سر بنر" />
+  
+  <h1>ontimechy</h1>
+  <hr/>
+
+  <p>
+    این نسخه اولیه سایت آنتایمچی است که در تاریخ 1404/04/09 راه اندازی شده است. <br/><br/>
+    آنتایمچی قصد دارد تا با توجه به نظرات شما خود را بهبود دهد، و برای این منظور مشتاقیم تا نظرات، انتقادات و پیشنهادات خودرا باما در میان بگذارید. <br/>
+    - مدیریت آن
+  </p><br/>
+
+  <a href="contact.html" target="_blank">ارتباط با ما</a><br/>
+  <a href="product.html" target="_blank">مشاهده محصول</a><br/>
+
+  <!-- بخش محصولات -->
+  <div class="product-section">
+    <h2 style="text-align:center;">محصولات ما</h2>
+    <div class="product-grid">
+
+      <div class="product">
+        <img src="images/products/p1.jpg" alt="محصول ۱">
+        <div class="product-name">ساعت کلاسیک مردانه</div>
+        <div class="product-price">1,250,000 تومان</div>
+      </div>
+
+      <div class="product">
+        <img src="images/products/p2.jpg" alt="محصول ۲">
+        <div class="product-name">ساعت اسپرت زنانه</div>
+        <div class="product-price">980,000 تومان</div>
+      </div>
+
+      <div class="product">
+        <img src="images/products/p3.jpg" alt="محصول ۳">
+        <div class="product-name">ساعت هوشمند مشکی</div>
+        <div class="product-price">1,850,000 تومان</div>
+      </div>
+
+      <!-- می‌تونی ادامه بدی، سه‌تا سه‌تا در هر ردیف -->
+
+    </div>
+  </div>
+
+</body>
 </html>
