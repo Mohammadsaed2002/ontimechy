@@ -6,120 +6,160 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-   body {
-  direction: rtl;
-  font-family: Tahoma, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #2E2E2E; /* زغالی تیره */
-  color: #f2f2f2; /* سفید مایل به خاکستری */
-}
+    body {
+      direction: rtl;
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2E2E2E;
+      color: #f2f2f2;
+    }
 
-a {
-  text-decoration: none;
-  color: #50C878; /* سبز زمردی */
-  margin-left: 10px;
-  font-weight: bold;
-  border: 1px solid #50C878;
-  padding: 5px 10px;
-  border-radius: 6px;
-  transition: 0.3s;
-}
+    /* همبرگر */
+    .hamburger {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 1001;
+    }
 
-a:hover {
-  background-color: #50C878;
-  color: #2E2E2E;
-}
+    .hamburger div {
+      width: 30px;
+      height: 4px;
+      background-color: #50C878;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
 
-h1, h2 {
-  color: #ffffff;
-  text-align: center;
-  margin-top: 20px;
-}
+    /* منو */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #3A3A3A;
+      padding-top: 60px;
+      transition: 0.3s ease;
+      z-index: 1000;
+      box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    }
 
-.product-section {
-  margin-top: 40px;
-}
+    .sidebar a {
+      display: block;
+      padding: 15px 25px;
+      color: #f2f2f2;
+      border-bottom: 1px solid #555;
+      font-size: 16px;
+    }
 
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
+    .sidebar a:hover {
+      background-color: #50C878;
+      color: #2E2E2E;
+    }
 
-.product {
-  background-color: #3a3a3a;
-  border: 1px solid #50C878;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  width: 250px;
-  text-align: center;
-  padding: 15px;
-  transition: transform 0.2s, background-color 0.2s;
-}
+    .sidebar.active {
+      right: 0;
+    }
 
-.product:hover {
-  transform: scale(1.03);
-  background-color: #4a4a4a;
-}
+    h1, h2 {
+      color: #ffffff;
+      text-align: center;
+      margin-top: 20px;
+    }
 
-.product img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
+    .product-section {
+      margin: 40px 20px;
+    }
 
-.product-name {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #ffffff;
-}
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
 
-.product-price {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #50C878;
-  font-weight: bold;
-}
+    .product {
+      background-color: #3a3a3a;
+      border: 1px solid #50C878;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      width: 250px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.2s, background-color 0.2s;
+    }
 
-hr {
-  margin: 30px 0;
-  border: none;
-  height: 1px;
-  background-color: #50C878;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
+    .product:hover {
+      transform: scale(1.03);
+      background-color: #4a4a4a;
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .product-name {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    .product-price {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #50C878;
+      font-weight: bold;
+    }
+
+    hr {
+      margin: 30px auto;
+      border: none;
+      height: 1px;
+      background-color: #50C878;
+      width: 80%;
+    }
   </style>
 </head>
 <body>
 
-  <a href="login.html" target="_blank">ورود</a>
-  <a href="register.html" target="_blank">ثبت نام</a><br/>
-  
+  <!-- دکمه همبرگر -->
+  <div class="hamburger" onclick="toggleSidebar()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- منوی کناری -->
+  <div id="sidebar" class="sidebar">
+    <a href="login.html" target="_blank">ورود</a>
+    <a href="register.html" target="_blank">ثبت نام</a>
+    <a href="contact.html" target="_blank">ارتباط با ما</a>
+    <a href="cart.html" target="_blank">سبد خرید</a>
+    <a href="rules.html" target="_blank">قوانین سایت</a>
+    <a href="product.html" target="_blank">محصولات</a>
+  </div>
+
   <img src="images/watchs/1.png" alt="ساعت" width="100%" height="400" title="سر بنر" />
-  
+
   <h1>ontimechy</h1>
   <hr/>
 
-  <p>
+  <p style="padding: 20px;">
     این نسخه اولیه سایت آنتایمچی است که در تاریخ 1404/04/09 راه اندازی شده است. <br/><br/>
-    آنتایمچی قصد دارد تا با توجه به نظرات شما خود را بهبود دهد، و برای این منظور مشتاقیم تا نظرات، انتقادات و پیشنهادات خودرا باما در میان بگذارید. <br/>
+    آنتایمچی قصد دارد تا با توجه به نظرات شما خود را بهبود دهد، و برای این منظور مشتاقیم تا نظرات، انتقادات و پیشنهادات خود را با ما در میان بگذارید. <br/>
     - مدیریت آن
-  </p><br/>
-
-  <a href="contact.html" target="_blank">ارتباط با ما</a>
-  <a href="product.html" target="_blank">مشاهده محصول</a><br/>
+  </p>
 
   <!-- بخش محصولات -->
   <div class="product-section">
-    <h2 style="text-align:center;">محصولات ما</h2>
+    <h2>محصولات ما</h2>
     <div class="product-grid">
 
-      <!-- ردیف اول -->
       <div class="product">
         <img src="images/watchs/1.png" alt="محصول ۱">
         <div class="product-name">ساعت کلاسیک مردانه</div>
@@ -131,14 +171,13 @@ hr {
         <div class="product-name">ساعت اسپرت زنانه</div>
         <div class="product-price">980,000 تومان</div>
       </div>
-
+      
       <div class="product">
         <img src="images/watchs/3.jpg" alt="محصول ۳">
         <div class="product-name">ساعت هوشمند مشکی</div>
         <div class="product-price">1,850,000 تومان</div>
       </div>
 
-      <!-- ردیف دوم -->
       <div class="product">
         <img src="images/watchs/4.jpg" alt="محصول ۴">
         <div class="product-name">ساعت چرمی ظریف</div>
@@ -159,6 +198,14 @@ hr {
 
     </div>
   </div>
+
+  <!-- اسکریپت برای باز و بسته شدن منو -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+  </script>
 
 </body>
 </html>
