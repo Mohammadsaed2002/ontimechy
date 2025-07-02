@@ -1,99 +1,62 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="images/icons/icon3.png" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ورود و ثبت نام</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: 'Tahoma', sans-serif;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #2E2E2E;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #F0F0F0;
-    }
-
-    .login-box {
-      background-color: #3A3A3A;
-      padding: 40px 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-      width: 350px;
-    }
-
-    .login-box h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #50C878;
-    }
-
-    .input-group {
-      margin-bottom: 20px;
-    }
-
-    .input-group label {
-      display: block;
-      margin-bottom: 5px;
-      color: #CCCCCC;
-    }
-
-    .input-group input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #666;
-      border-radius: 10px;
-      font-size: 15px;
-      background-color: #2E2E2E;
-      color: #F0F0F0;
-    }
-
-    .input-group input:focus {
-      outline: none;
-      border-color: #50C878;
-      box-shadow: 0 0 5px #50C878aa;
-    }
-
-    .login-button {
-      width: 100%;
-      padding: 12px;
-      background-color: #50C878;
-      color: #1E1E1E;
-      border: none;
-      border-radius: 10px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .login-button:hover {
-      background-color: #3faa65;
-    }
-  </style>
-</head>
-<body>
-  <div class="login-box">
-    <h2>ورود به حساب</h2>
-    <form action="#" method="POST">
-      <div class="input-group">
-        <label for="username">شماره موبایل خود را وارد کنید</label>
-        <input type="text" id="username" name="username" required />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود | فروشگاه ساعت</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #111827; /* زمینه تیره */
+        font-family: 'Vazir', sans-serif;
+      }
+      .gold-text {
+        color: #facc15; /* طلایی */
+      }
+      .gold-bg {
+        background-color: #facc15;
+      }
+      .gold-border {
+        border-color: #facc15;
+      }
+      input:focus {
+        outline: none;
+        border-color: #facc15;
+        box-shadow: 0 0 0 1px #facc15;
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center min-h-screen px-4">
+    <div class="w-full max-w-sm p-6 bg-gray-900 rounded-2xl shadow-lg">
+      <div class="mb-6 text-center">
+        <h1 class="text-2xl font-bold gold-text">ورود به حساب کاربری</h1>
+        <p class="text-gray-400 text-sm mt-2">برای ادامه شماره موبایل خود را وارد کنید</p>
       </div>
-      <div class="input-group">
-        <label for="password">رمز عبور</label>
-        <input type="password" id="password" name="password" required />
-      </div>
-      <button type="submit" class="login-button">ورود</button>
-    </form>
-  </div>
-</body>
+
+      <form class="space-y-5">
+        <div>
+          <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">شماره موبایل</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="مثلاً 09121234567"
+            class="w-full px-4 py-3 text-gray-200 bg-gray-800 border-2 border-gray-700 rounded-xl transition focus:border-gold-500"
+            required
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="w-full py-3 font-semibold text-gray-900 rounded-xl gold-bg hover:bg-yellow-400 transition"
+        >
+          دریافت کد ورود
+        </button>
+
+        <p class="text-xs text-gray-500 text-center">
+          با ورود، <a href="#" class="gold-text hover:underline">قوانین استفاده از خدمات</a> را می‌پذیرید
+        </p>
+      </form>
+    </div>
+  </body>
 </html>
