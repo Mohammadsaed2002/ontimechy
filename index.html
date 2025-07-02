@@ -1,5 +1,5 @@
-<!-- فقط قسمت head و body رو اصلاح شده گذاشتم، بقیش مشابه کدت هست -->
-
+<!DOCTYPE html>
+<html lang="fa">
 <head>
   <title>ontimechy</title>
   <link rel="icon" href="images/icons/icon3.png" type="image/x-icon">
@@ -15,26 +15,13 @@
       color: #f2f2f2;
     }
 
-    /* سربرگ */
-    .header {
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      height: 60px;
-      background-color: #3A3A3A;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-      z-index: 1002;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-    }
-
     /* همبرگر */
     .hamburger {
+      position: absolute;
+      top: 20px;
+      right: 20px;
       cursor: pointer;
-      z-index: 1003;
+      z-index: 1001;
     }
 
     .hamburger div {
@@ -43,22 +30,6 @@
       background-color: #50C878;
       margin: 6px 0;
       transition: 0.4s;
-    }
-
-    /* نوار جستجو */
-    .search-box {
-      flex-grow: 1;
-      margin-right: 20px;
-    }
-
-    .search-box input {
-      width: 100%;
-      padding: 8px 12px;
-      border-radius: 8px;
-      border: none;
-      background-color: #2E2E2E;
-      color: #f2f2f2;
-      font-size: 14px;
     }
 
     /* منو */
@@ -152,49 +123,37 @@
       background-color: #50C878;
       width: 80%;
     }
-
-    /* فاصله محتوا از header ثابت */
-    .content {
-      padding-top: 80px;
-    }
   </style>
 </head>
 <body>
 
-  <!-- سربرگ با همبرگر و جستجو -->
-  <div class="header">
-    <div class="hamburger" onclick="toggleSidebar()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <div class="search-box">
-      <input type="text" placeholder="جستجوی محصول...">
-    </div>
+  <!-- دکمه همبرگر -->
+  <div class="hamburger" onclick="toggleSidebar()">
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
 
   <!-- منوی کناری -->
   <div id="sidebar" class="sidebar">
-    <a href="login.html" target="_blank">ورود</a>
-    <a href="register.html" target="_blank">ثبت نام</a>
+    <a href="login.html">ورود</a>
+    <a href="register.html">ثبت نام</a>
     <a href="contact.html" target="_blank">ارتباط با ما</a>
     <a href="cart.html" target="_blank">سبد خرید</a>
     <a href="rules.html" target="_blank">قوانین سایت</a>
     <a href="product.html" target="_blank">محصولات</a>
   </div>
 
-  <!-- محتوا -->
-  <div class="content">
+  <img src="images/watchs/1.png" alt="ساعت" width="100%" height="400" title="سر بنر" />
 
-    <img src="images/watchs/1.png" alt="ساعت" width="100%" height="400" title="سر بنر" />
+  <h1>ontimechy</h1>
+  <hr/>
 
-    <h1>ontimechy</h1>
-    <hr/>
-    <p style="padding: 20px;">
-      این نسخه اولیه سایت آنتایمچی است که در تاریخ 1404/04/09 راه اندازی شده است. <br/><br/>
-      آنتایمچی قصد دارد تا با توجه به نظرات شما خود را بهبود دهد، و برای این منظور مشتاقیم تا نظرات، انتقادات و پیشنهادات خود را با ما در میان بگذارید. <br/>
-      - مدیریت آن
-    </p>
+  <p style="padding: 20px;">
+    این نسخه اولیه سایت آنتایمچی است که در تاریخ 1404/04/09 راه اندازی شده است. <br/><br/>
+    آنتایمچی قصد دارد تا با توجه به نظرات شما خود را بهبود دهد، و برای این منظور مشتاقیم تا نظرات، انتقادات و پیشنهادات خود را با ما در میان بگذارید. <br/>
+    - مدیریت آن
+  </p>
 
   <!-- بخش محصولات -->
   <div class="product-section">
@@ -212,7 +171,8 @@
         <div class="product-name">ساعت اسپرت زنانه</div>
         <div class="product-price">980,000 تومان</div>
       </div>
-  <div class="product">
+      
+      <div class="product">
         <img src="images/watchs/3.jpg" alt="محصول ۳">
         <div class="product-name">ساعت هوشمند مشکی</div>
         <div class="product-price">1,850,000 تومان</div>
@@ -239,6 +199,7 @@
     </div>
   </div>
 
+  <!-- اسکریپت برای باز و بسته شدن منو -->
   <script>
     function toggleSidebar() {
       const sidebar = document.getElementById('sidebar');
