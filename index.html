@@ -249,6 +249,20 @@
       const sidebar = document.getElementById('sidebar');
       sidebar.classList.toggle('active');
     }
+
+    // بستن سایدبار با کلیک خارج از آن
+    document.addEventListener('click', function(event) {
+      const sidebar = document.getElementById('sidebar');
+      const hamburger = document.querySelector('.hamburger');
+      if (
+        sidebar.classList.contains('active') &&
+        !sidebar.contains(event.target) &&
+        !hamburger.contains(event.target)
+      ) {
+        sidebar.classList.remove('active');
+      }
+    });
+
   </script>
 
 </body>
