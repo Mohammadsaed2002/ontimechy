@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>داشبورد مدیریت | Ontimechy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../images/icons/icon3.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="admin-body">
+
+  <div class="admin-shell">
+
+    <aside class="admin-sidebar">
+      <a href="../index.html" class="admin-logo">Ontimechy · مدیریت</a>
+      <nav class="admin-nav">
+        <a href="admin-dashboard.html" class="is-active">📊 نمای کلی</a>
+        <a href="admin-dashboard.html#orders">🧾 سفارش‌ها</a>
+        <a href="admin-dashboard.html#products">⌚ محصولات</a>
+        <a href="admin-dashboard.html#users">👤 کاربران</a>
+        <a href="../index.html">↩ بازگشت به سایت</a>
+      </nav>
+    </aside>
+
+    <main class="admin-main">
+
+      <div class="admin-topbar">
+        <h1>نمای کلی داشبورد</h1>
+        <div class="admin-profile">
+          <span class="name">مدیر فروشگاه</span>
+          <div class="admin-avatar">آم</div>
+        </div>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-label">سفارش‌های امروز</div>
+          <div class="stat-value accent">۱۲</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">درآمد این ماه</div>
+          <div class="stat-value">۴۸,۵۰۰,۰۰۰ تومان</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">تعداد محصولات</div>
+          <div class="stat-value">۶</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">کاربران ثبت‌نام‌شده</div>
+          <div class="stat-value">۲۳۴</div>
+        </div>
+      </div>
+
+      <div class="admin-panel" id="orders">
+        <h3>آخرین سفارش‌ها</h3>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>شماره سفارش</th>
+              <th>مشتری</th>
+              <th>مبلغ</th>
+              <th>وضعیت</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="شماره سفارش">#۱۰۲۴</td>
+              <td data-label="مشتری">علی رضایی</td>
+              <td data-label="مبلغ">۱,۴۰۰,۰۰۰ تومان</td>
+              <td data-label="وضعیت"><span class="status-badge done">تحویل شده</span></td>
+            </tr>
+            <tr>
+              <td data-label="شماره سفارش">#۱۰۲۵</td>
+              <td data-label="مشتری">سارا محمدی</td>
+              <td data-label="مبلغ">۲,۰۰۰,۰۰۰ تومان</td>
+              <td data-label="وضعیت"><span class="status-badge pending">در حال پردازش</span></td>
+            </tr>
+            <tr>
+              <td data-label="شماره سفارش">#۱۰۲۶</td>
+              <td data-label="مشتری">امیر حسینی</td>
+              <td data-label="مبلغ">۸۹۰,۰۰۰ تومان</td>
+              <td data-label="وضعیت"><span class="status-badge canceled">لغو شده</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="admin-panel" id="products">
+        <h3>محصولات فروشگاه</h3>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>محصول</th>
+              <th>دسته</th>
+              <th>قیمت</th>
+              <th>موجودی</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="محصول">ساعت کلاسیک مردانه</td>
+              <td data-label="دسته">کلاسیک</td>
+              <td data-label="قیمت">۱,۲۵۰,۰۰۰ تومان</td>
+              <td data-label="موجودی">۱۸</td>
+            </tr>
+            <tr>
+              <td data-label="محصول">ساعت اسپرت زنانه</td>
+              <td data-label="دسته">اسپرت</td>
+              <td data-label="قیمت">۹۸۰,۰۰۰ تومان</td>
+              <td data-label="موجودی">۲۵</td>
+            </tr>
+            <tr>
+              <td data-label="محصول">ساعت هوشمند مشکی</td>
+              <td data-label="دسته">هوشمند</td>
+              <td data-label="قیمت">۱,۸۵۰,۰۰۰ تومان</td>
+              <td data-label="موجودی">۹</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="admin-panel" id="users">
+        <h3>آخرین کاربران</h3>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>نام</th>
+              <th>شماره موبایل</th>
+              <th>تاریخ عضویت</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="نام">علی رضایی</td>
+              <td data-label="شماره موبایل">0912***4567</td>
+              <td data-label="تاریخ عضویت">۱۴۰۵/۰۴/۱۰</td>
+            </tr>
+            <tr>
+              <td data-label="نام">سارا محمدی</td>
+              <td data-label="شماره موبایل">0935***1122</td>
+              <td data-label="تاریخ عضویت">۱۴۰۵/۰۴/۱۲</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--
+        نکته: این صفحه یک نمونه‌ی نمایشی (Mockup) از پنل مدیریت است.
+        مقداردهی واقعی جدول‌ها، احراز هویت ادمین و تغییر وضعیت سفارش‌ها
+        نیاز به جاوااسکریپت و بک‌اند دارد که در فاز بعدی پروژه اضافه می‌شود.
+      -->
+
+    </main>
+  </div>
+
+</body>
+</html>

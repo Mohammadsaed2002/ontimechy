@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>محصول | Ontimechy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../images/icons/icon3.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+  <header class="site-header">
+    <label for="nav-toggle" class="hamburger" aria-label="باز کردن منو">
+      <span></span><span></span><span></span>
+    </label>
+    <a href="../index.html" class="logo">Ontimechy</a>
+    <div class="search-box">
+      <input type="text" placeholder="جستجوی محصول..." />
+    </div>
+    <div class="header-actions">
+      <a href="cart.html" class="icon-link" aria-label="سبد خرید">
+        <svg viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="10" cy="21" r="1.4"/><circle cx="17" cy="21" r="1.4"/></svg>
+      </a>
+      <a href="login.html" class="icon-link" aria-label="ورود / ثبت‌نام">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.4" stroke-width="2"/><path stroke-width="2" stroke-linecap="round" d="M5 20c1.2-3.8 4.2-5.8 7-5.8s5.8 2 7 5.8"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <label for="nav-toggle" class="sidebar-backdrop"></label>
+  <nav class="sidebar">
+    <div class="sidebar-title">منوی سایت</div>
+    <a href="../index.html">خانه</a>
+    <a href="shop.html">فروشگاه</a>
+    <a href="cart.html">سبد خرید</a>
+    <a href="login.html">ورود / ثبت‌نام</a>
+    <a href="contact.html">ارتباط با ما</a>
+    <a href="about.html">درباره ما</a>
+  </nav>
+
+  <main class="page-content">
+    <div class="container" style="padding-top:26px;padding-bottom:60px;">
+
+      <!-- تعویض سریع بین محصولات؛ با کلیک روی هر مورد، فقط بخش همان محصول (پایین همین صفحه) نمایش داده می‌شود -->
+      <div class="shop-toolbar">
+        <a href="#product-1" class="chip">ساعت کلاسیک مردانه</a>
+        <a href="#product-2" class="chip">ساعت اسپرت زنانه</a>
+        <a href="#product-3" class="chip">ساعت هوشمند مشکی</a>
+        <a href="#product-4" class="chip">ساعت چرمی ظریف</a>
+        <a href="#product-5" class="chip">ساعت فلزی نقره‌ای</a>
+        <a href="#product-6" class="chip">ساعت بند پارچه‌ای</a>
+      </div>
+
+      <!-- محصول ۱: ساعت کلاسیک مردانه -->
+      <section id="product-1" class="product-panel">
+        <div class="breadcrumb">
+          <a href="../index.html">خانه</a> ›
+          <a href="shop.html">فروشگاه</a> ›
+          <a href="shop.html#classic">کلاسیک</a> ›
+          ساعت کلاسیک مردانه
+        </div>
+        <div class="product-detail">
+          <div class="product-gallery">
+            <div class="product-thumb"><img src="../images/watchs/1.jpg" alt="ساعت کلاسیک مردانه"></div>
+          </div>
+          <div class="product-info">
+            <span class="eyebrow">کلاسیک</span>
+            <h1>ساعت کلاسیک مردانه</h1>
+            <div class="price">۱,۲۵۰,۰۰۰ تومان</div>
+            <p class="desc">ساعتی لوکس با بند چرمی اصل و بدنه استیل ضدزنگ که برای استایل رسمی و روزمره یکسان مناسب است. صفحه‌نمایش خوانا و مکانیزم دقیق، این مدل را به انتخابی مطمئن برای استفاده روزانه تبدیل کرده.</p>
+            <ul class="spec-list">
+              <li><span>دسته‌بندی</span><span>کلاسیک</span></li>
+              <li><span>ویژگی بند</span><span>چرم طبیعی</span></li>
+              <li><span>مقاومت در برابر آب</span><span>۳ اتمسفر</span></li>
+              <li><span>گارانتی</span><span>۱۲ ماهه</span></li>
+            </ul>
+            <form action="cart.html">
+              <div class="qty-row">
+                <label for="qty-1">تعداد</label>
+                <input type="number" id="qty-1" name="qty" class="qty-input" value="1" min="1" max="10" />
+              </div>
+              <div class="product-actions">
+                <button type="submit" class="btn btn-primary">افزودن به سبد خرید</button>
+                <a href="checkout.html" class="btn btn-outline">خرید سریع</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- محصول ۲: ساعت اسپرت زنانه -->
+      <section id="product-2" class="product-panel">
+        <div class="breadcrumb">
+          <a href="../index.html">خانه</a> ›
+          <a href="shop.html">فروشگاه</a> ›
+          <a href="shop.html#sport">اسپرت</a> ›
+          ساعت اسپرت زنانه
+        </div>
+        <div class="product-detail">
+          <div class="product-gallery">
+            <div class="product-thumb"><img src="../images/watchs/2.jpg" alt="ساعت اسپرت زنانه"></div>
+          </div>
+          <div class="product-info">
+            <span class="eyebrow">اسپرت</span>
+            <h1>ساعت اسپرت زنانه</h1>
+            <div class="price">۹۸۰,۰۰۰ تومان</div>
+            <p class="desc">مدلی سبک و مقاوم با بند سیلیکونی نرم، مناسب فعالیت‌های روزمره و ورزشی. طراحی رنگی و راحت، این ساعت را برای استفاده مداوم در طول روز ایده‌آل کرده است.</p>
+            <ul class="spec-list">
+              <li><span>دسته‌بندی</span><span>اسپرت</span></li>
+              <li><span>ویژگی بند</span><span>سیلیکون ضدآب</span></li>
+              <li><span>مقاومت در برابر آب</span><span>۵ اتمسفر</span></li>
+              <li><span>گارانتی</span><span>۱۲ ماهه</span></li>
+            </ul>
+            <form action="cart.html">
+              <div class="qty-row">
+                <label for="qty-2">تعداد</label>
+                <input type="number" id="qty-2" name="qty" class="qty-input" value="1" min="1" max="10" />
+              </div>
+              <div class="product-actions">
+                <button type="submit" class="btn btn-primary">افزودن به سبد خرید</button>
+                <a href="checkout.html" class="btn btn-outline">خرید سریع</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- محصول ۳: ساعت هوشمند مشکی -->
+      <section id="product-3" class="product-panel">
+        <div class="breadcrumb">
+          <a href="../index.html">خانه</a> ›
+          <a href="shop.html">فروشگاه</a> ›
+          <a href="shop.html#smart">هوشمند</a> ›
+          ساعت هوشمند مشکی
+        </div>
+        <div class="product-detail">
+          <div class="product-gallery">
+            <div class="product-thumb"><img src="../images/watchs/3.jpg" alt="ساعت هوشمند مشکی"></div>
+          </div>
+          <div class="product-info">
+            <span class="eyebrow">هوشمند</span>
+            <h1>ساعت هوشمند مشکی</h1>
+            <div class="price">۱,۸۵۰,۰۰۰ تومان</div>
+            <p class="desc">ساعت هوشمند با قابلیت اتصال به گوشی، نمایش اعلان‌ها، ردیابی ضربان قلب و فعالیت روزانه. صفحه‌نمایش لمسی روشن و باتری بادوام، همراهی مطمئن در طول روز است.</p>
+            <ul class="spec-list">
+              <li><span>دسته‌بندی</span><span>هوشمند</span></li>
+              <li><span>ویژگی بند</span><span>بند سیلیکونی قابل تعویض</span></li>
+              <li><span>مقاومت در برابر آب</span><span>۳ اتمسفر (IPX7)</span></li>
+              <li><span>گارانتی</span><span>۱۲ ماهه</span></li>
+            </ul>
+            <form action="cart.html">
+              <div class="qty-row">
+                <label for="qty-3">تعداد</label>
+                <input type="number" id="qty-3" name="qty" class="qty-input" value="1" min="1" max="10" />
+              </div>
+              <div class="product-actions">
+                <button type="submit" class="btn btn-primary">افزودن به سبد خرید</button>
+                <a href="checkout.html" class="btn btn-outline">خرید سریع</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- محصول ۴: ساعت چرمی ظریف -->
+      <section id="product-4" class="product-panel">
+        <div class="breadcrumb">
+          <a href="../index.html">خانه</a> ›
+          <a href="shop.html">فروشگاه</a> ›
+          <a href="shop.html#classic">کلاسیک</a> ›
+          ساعت چرمی ظریف
+        </div>
+        <div class="product-detail">
+          <div class="product-gallery">
+            <div class="product-thumb"><img src="../images/watchs/4.jpg" alt="ساعت چرمی ظریف"></div>
+          </div>
+          <div class="product-info">
+            <span class="eyebrow">کلاسیک</span>
+            <h1>ساعت چرمی ظریف</h1>
+            <div class="price">۱,۱۵۰,۰۰۰ تومان</div>
+            <p class="desc">طراحی مینیمال و بدنه‌ی نازک این ساعت، آن را به گزینه‌ای شیک برای استایل‌های ساده و رسمی تبدیل کرده. بند چرمی نرم راحتی استفاده در طول روز را تضمین می‌کند.</p>
+            <ul class="spec-list">
+              <li><span>دسته‌بندی</span><span>کلاسیک</span></li>
+              <li><span>ویژگی بند</span><span>چرم طبیعی نازک</span></li>
+              <li><span>مقاومت در برابر آب</span><span>۳ اتمسفر</span></li>
+              <li><span>گارانتی</span><span>۱۲ ماهه</span></li>
+            </ul>
+            <form action="cart.html">
+              <div class="qty-row">
+                <label for="qty-4">تعداد</label>
+                <input type="number" id="qty-4" name="qty" class="qty-input" value="1" min="1" max="10" />
+              </div>
+              <div class="product-actions">
+                <button type="submit" class="btn btn-primary">افزودن به سبد خرید</button>
+                <a href="checkout.html" class="btn btn-outline">خرید سریع</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- محصول ۵: ساعت فلزی نقره‌ای -->
+      <section id="product-5" class="product-panel">
+        <div class="breadcrumb">
+          <a href="../index.html">خانه</a> ›
+          <a href="shop.html">فروشگاه</a> ›
+          <a href="shop.html#classic">کلاسیک</a> ›
+          ساعت فلزی نقره‌ای
+        </div>
+        <div class="product-detail">
+          <div class="product-gallery">
+            <div class="product-thumb"><img src="../images/watchs/5.jpg" alt="ساعت فلزی نقره‌ای"></div>
+          </div>
+          <div class="product-info">
+            <span class="eyebrow">کلاسیک</span>
+            <h1>ساعت فلزی نقره‌ای</h1>
+            <div class="price">۱,۴۲۰,۰۰۰ تومان</div>
+            <p class="desc">بدنه و بند تمام استیل با پوشش ضدخش، ظاهری براق و بادوام به این مدل داده است. انتخابی مناسب برای کسانی که به دنبال دوام بالا در کنار ظاهر شیک هستند.</p>
+            <ul class="spec-list">
+              <li><span>دسته‌بندی</span><span>کلاسیک</span></li>
+              <li><span>ویژگی بند</span><span>استیل ضدزنگ</span></li>
+              <li><span>مقاومت در برابر آب</span><span>۵ اتمسفر</span></li>
+              <li><span>گارانتی</span><span>۱۲ ماهه</span></li>
+            </ul>
+            <form action="cart.html">
+              <div class="qty-row">
+                <label for="qty-5">تعداد</label>
+                <input type="number" id="qty-5" name="qty" class="qty-input" value="1" min="1" max="10" />
+              </div>
+              <div class="product-actions">
+                <button type="submit" class="btn btn-primary">افزودن به سبد خرید</button>
+                <a href="checkout.html" class="btn btn-outline">خرید سریع</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- محصول ۶: ساعت بند پارچه‌ای -->
+      <section id="product-6" class="product-panel">
+        <div class="breadcrumb">
+          <a href="../index.html">خانه</a> ›
+          <a href="shop.html">فروشگاه</a> ›
+          <a href="shop.html#sport">اسپرت</a> ›
+          ساعت بند پارچه‌ای
+        </div>
+        <div class="product-detail">
+          <div class="product-gallery">
+            <div class="product-thumb"><img src="../images/watchs/6.jpg" alt="ساعت بند پارچه‌ای"></div>
+          </div>
+          <div class="product-info">
+            <span class="eyebrow">اسپرت</span>
+            <h1>ساعت بند پارچه‌ای</h1>
+            <div class="price">۸۹۰,۰۰۰ تومان</div>
+            <p class="desc">بند پارچه‌ای نفوذپذیر و بدنه‌ی سبک، این ساعت را برای ورزش و فعالیت‌های روزمره بسیار راحت کرده است. گزینه‌ای اقتصادی برای استفاده‌ی روزانه.</p>
+            <ul class="spec-list">
+              <li><span>دسته‌بندی</span><span>اسپرت</span></li>
+              <li><span>ویژگی بند</span><span>پارچه‌ای قابل شست‌وشو</span></li>
+              <li><span>مقاومت در برابر آب</span><span>۳ اتمسفر</span></li>
+              <li><span>گارانتی</span><span>۱۲ ماهه</span></li>
+            </ul>
+            <form action="cart.html">
+              <div class="qty-row">
+                <label for="qty-6">تعداد</label>
+                <input type="number" id="qty-6" name="qty" class="qty-input" value="1" min="1" max="10" />
+              </div>
+              <div class="product-actions">
+                <button type="submit" class="btn btn-primary">افزودن به سبد خرید</button>
+                <a href="checkout.html" class="btn btn-outline">خرید سریع</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- حالت پیش‌فرض: وقتی هیچ محصولی از لینک انتخاب نشده باشد -->
+      <section id="product-empty" class="product-panel default">
+        <div class="product-empty">
+          <div class="hero-icon">⌚</div>
+          <h2>یک محصول را انتخاب کن</h2>
+          <p>برای مشاهده جزئیات، روی یکی از مدل‌های بالا یا موارد زیر کلیک کن.</p>
+          <div class="quick-pick-grid">
+            <a href="#product-1" class="quick-pick">
+              <div class="product-thumb"><img src="../images/watchs/1.jpg" alt="ساعت کلاسیک مردانه"></div>
+              ساعت کلاسیک مردانه
+            </a>
+            <a href="#product-2" class="quick-pick">
+              <div class="product-thumb"><img src="../images/watchs/2.jpg" alt="ساعت اسپرت زنانه"></div>
+              ساعت اسپرت زنانه
+            </a>
+            <a href="#product-3" class="quick-pick">
+              <div class="product-thumb"><img src="../images/watchs/3.jpg" alt="ساعت هوشمند مشکی"></div>
+              ساعت هوشمند مشکی
+            </a>
+            <a href="#product-4" class="quick-pick">
+              <div class="product-thumb"><img src="../images/watchs/4.jpg" alt="ساعت چرمی ظریف"></div>
+              ساعت چرمی ظریف
+            </a>
+            <a href="#product-5" class="quick-pick">
+              <div class="product-thumb"><img src="../images/watchs/5.jpg" alt="ساعت فلزی نقره‌ای"></div>
+              ساعت فلزی نقره‌ای
+            </a>
+            <a href="#product-6" class="quick-pick">
+              <div class="product-thumb"><img src="../images/watchs/6.jpg" alt="ساعت بند پارچه‌ای"></div>
+              ساعت بند پارچه‌ای
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Ontimechy</h4>
+          <p>فروشگاه اینترنتی ساعت مچی با تمرکز بر کیفیت، سبک و قیمت منصفانه.</p>
+        </div>
+        <div class="footer-col">
+          <h4>دسترسی سریع</h4>
+          <ul>
+            <li><a href="../index.html">خانه</a></li>
+            <li><a href="shop.html">فروشگاه</a></li>
+            <li><a href="login.html">ورود / ثبت‌نام</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>پشتیبانی</h4>
+          <ul>
+            <li><a href="contact.html">ارتباط با ما</a></li>
+            <li><a href="about.html">درباره ما</a></li>
+            <li><a href="https://t.me/ontimechy" target="_blank" rel="nofollow">کانال تلگرام</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 1405 Ontimechy — تمامی حقوق محفوظ است.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
